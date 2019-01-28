@@ -1,5 +1,12 @@
 export { future as theme } from 'mdx-deck/themes'
 import { Head, Appear } from 'mdx-deck'
+import AirBnb from './images/airbnb.jpg'
+import Chart from './images/chart.png'
+import Figma from './images/figma.png'
+import Ghost from './images/ghost.png'
+import IBM from './images/ibm.png'
+import Nike from './images/nike.png'
+import SendGrid from './images/sendgrid.jpg'
 
 <Head>
   <title>Introducing Gatsby</title>
@@ -72,7 +79,7 @@ import Item from './common/Item'
     </ul>
   </Item>
   <Item width="50">
-    <img src="/images/chart.png" alt="chart" />
+    <img src={Chart} alt="chart" />
   </Item>
 </Flex>
 
@@ -172,22 +179,22 @@ import Item from './common/Item'
 
 <Flex>
   <Item width="30">
-    <img src="/images/figma.png" alt="figma" />
+    <img src={Figma} alt="figma" />
   </Item>
   <Item width="30">
-    <img src="/images/ibm.png" alt="ibm" />
+    <img src={IBM} alt="ibm" />
   </Item>
   <Item width="30">
-    <img src="/images/airbnb.jpg" alt="airbnb" />
+    <img src={AirBnb} alt="airbnb" />
   </Item>
   <Item width="30">
-    <img src="/images/nike.png" alt="nike" />
+    <img src={Nike} alt="nike" />
   </Item>
   <Item width="30">
-    <img src="/images/sendgrid.jpg" alt="sendgrid" />
+    <img src={SendGrid} alt="sendgrid" />
   </Item>
   <Item width="30">
-    <img src="/images/ghost.png" alt="ghost" />
+    <img src={Ghost} alt="ghost" />
   </Item>
 </Flex>
 
