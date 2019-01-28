@@ -1,0 +1,207 @@
+export { future as theme } from 'mdx-deck/themes'
+import { Head, Appear } from 'mdx-deck'
+
+<Head>
+  <title>Introducing Gatsby</title>
+  <meta name='twitter:card' content='summary_large_image' />
+  <meta name='twitter:site' content='@smakosh' />
+  <meta name='twitter:title' content='Introducing Gatsby' />
+  <meta name='twitter:description' content='An introductory presentation about Gatsby' />
+</Head>
+
+<div style={{ textAlign: 'left' }}>
+  <h1>Introducing Gatsby, the new & best SSG -Static Site Generator-</h1>
+  <h4>Built with webpack, React & GraphQL.</h4>
+</div>
+
+---
+
+### Who am I?
+
+<ul style={{ textAlign: 'left' }}>
+  <Appear>
+    <li>I'm Ismail Ghallou,</li>
+    <li>I work as a Front-end developer at Obytes along with Youssouf El Azizi & an amazing team.</li>
+    <li>I also work on side projects like <a
+        style={{ color: '#fff' }}
+        href="https://play.google.com/store/apps/details?id=com.aihashtags/?ref=gatsby-slides"
+        target="_blank">Ai Hashtags </a>
+      & <a
+          style={{ color: '#fff' }}
+          href="https://beafapp.com/?ref=gatsby-slides"
+          target="_blank">Beaf</a>
+    </li>
+    <li>I publish articles at my personal blog: <a
+          style={{ color: '#fff' }}
+          href="https://smakosh.com/blog/?ref=gatsby-slides"
+          target="_blank">smakosh.com/blog</a></li>
+    <li>And I contribute to OSS when ever I'm free</li>
+  </Appear>
+</ul>
+
+---
+
+### So What's Gatsby?
+
+---
+
+#### Gatsby is a new Static Site Generator - Built with React, webpack & GraphQL.
+
+##### It creates hybrid websites: think of it as a mixture of a static website and a React app.
+
+<ul style={{ textAlign: 'left' }}>
+  <li>It generates HTML pages (files) at run/build time</li>
+  <li>Navigates between pages with pushState just like a SPA</li>
+</ul>
+
+---
+
+### What’s so awesome about it?
+
+---
+
+import Flex from './common/Flex'
+import Item from './common/Item'
+
+<Flex>
+  <Item width="50">
+    <ul>
+      <li>You can build your static PWA with Gatsby.</li>
+      <li>Use different Data sources or file formats to manage content.</li>
+      <li>You could also use different services for search/auth/cart/payments etc...</li>
+    </ul>
+  </Item>
+  <Item width="50">
+    <img src="/images/chart.png" alt="chart" />
+  </Item>
+</Flex>
+
+---
+
+### Pros & cons
+
+---
+
+<Flex>
+  <Item width="50">
+    <h4>Pros</h4>
+    <ul>
+      <li>Secured as it’s static</li>
+      <li>Cacheable</li>
+      <li>Cheap to host</li>
+      <li>Out of the box good performance, pwa & best practices.</li>
+      <li>Loads blazing fast</li>
+      <li>SPA look alike</li>
+      <li>Hot reload</li>
+    </ul>
+  </Item>
+  <Item width="50">
+    <h4>Cons</h4>
+    <ul>
+      <li>Does Not generate new files on demand but does it during run/build time & for only predicted pages.</li>
+      <li>Plugins system</li>
+    </ul>
+  </Item>
+</Flex>
+
+---
+
+### How Gatsby renders the content?
+
+---
+
+<Flex>
+  <Item width="30">
+    <h4>Step 1</h4>
+    <ul>
+      <li>It opens & validates gatsby config, then it loads the plugins after deleting the html/css files of the previous build.</li>
+    </ul>
+  </Item>
+  <Item width="30">
+    <h4>Step 2</h4>
+    <ul>
+      <li>Gets the content (if there is any) from your files or platforms such as Contentful/Wordpress etc...</li>
+    </ul>
+  </Item>
+  <Item width="30">
+    <h4>Step 3</h4>
+    <ul>
+      <li>Extracts & runs the static queries, then it generates necessary pages if you did so on gatsby-node file.</li>
+    </ul>
+  </Item>
+</Flex>
+
+---
+
+### Page & Static queries
+
+---
+
+##### Gatsby has templates, pages & components
+
+<ul style={{ textAlign: 'left' }}>
+  <li>Page queries do accept variables via pageContext in gatsby-config but can only be added to page components & templates (templates === pages).</li>
+  <br/>
+  <li>Static queries do not accept variables and can be used on components.</li>
+</ul>
+
+---
+
+### Gatsby plugins
+
+---
+
+<ul style={{ textAlign: 'left' }}>
+  <h4>Source plugins</h4>
+  <li>Add external data or content (e.g. your CMS, static files, a REST API) to your Gatsby GraphQL data.</li>
+</ul>
+
+<ul style={{ textAlign: 'left' }}>
+  <h4>Transformers</h4>
+  <li>Transform data from other formats (e.g. Markdown, YAML, CSV) to JSON objects.</li>
+</ul>
+
+<ul style={{ textAlign: 'left' }}>
+  <h4>Services</h4>
+  <li>Add different third-party services to your Gatsby site like (GA, Algolia, Auth0…).</li>
+</ul>
+
+---
+
+### Gatsby is used by popular corporations
+
+<Flex>
+  <Item width="30">
+    <img src="/images/figma.png" alt="figma" />
+  </Item>
+  <Item width="30">
+    <img src="/images/ibm.png" alt="ibm" />
+  </Item>
+  <Item width="30">
+    <img src="/images/airbnb.jpg" alt="airbnb" />
+  </Item>
+  <Item width="30">
+    <img src="/images/nike.png" alt="nike" />
+  </Item>
+  <Item width="30">
+    <img src="/images/sendgrid.jpg" alt="sendgrid" />
+  </Item>
+  <Item width="30">
+    <img src="/images/ghost.png" alt="ghost" />
+  </Item>
+</Flex>
+
+---
+
+### Demo
+
+---
+
+### Questions?
+
+---
+
+### References
+
+- https://Gatsbyjs.org
+- https://www.gatsbyjs.org/docs/static-query/#how-staticquery-differs-from-page-query
