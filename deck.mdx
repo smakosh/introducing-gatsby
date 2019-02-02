@@ -1,5 +1,8 @@
 export { future as theme } from 'mdx-deck/themes'
 import { Head, Appear } from 'mdx-deck'
+import Flex from './common/Flex'
+import Item from './common/Item'
+import Sponsor from './common/Sponsor'
 
 <Head>
   <title>Introducing Gatsby</title>
@@ -10,11 +13,11 @@ import { Head, Appear } from 'mdx-deck'
 </Head>
 
 <div style={{ textAlign: 'left' }}>
+  <Sponsor>
+    <img src="https://raw.githubusercontent.com/smakosh/introducing-gatsby/master/images/DEVC_CASA_LOGO.png?token=ATJt3ZuX3uB9qVAiC0293ortZrrI3zJ4ks5cWGAywA%3D%3D" alt="DevC_Casa_Logo" />
+  </Sponsor>
   <h1>Introducing Gatsby, the new & best SSG -Static Site Generator-</h1>
   <h4>Built with webpack, React & GraphQL.</h4>
-  <div>
-    <img src="https://raw.githubusercontent.com/smakosh/introducing-gatsby/master/images/DEVC_CASA_LOGO.png?token=ATJt3ZuX3uB9qVAiC0293ortZrrI3zJ4ks5cWGAywA%3D%3D" alt="DevC_Casa_Logo" />
-  </div>
 </div>
 
 ---
@@ -48,6 +51,8 @@ import { Head, Appear } from 'mdx-deck'
 
 ---
 
+<img width="128" src="https://raw.githubusercontent.com/smakosh/introducing-gatsby/master/images/gatsby.png?token=ATJt3clN7laUpjbo5hJ1gVLoZg3YAJjVks5cXqyzwA%3D%3D" alt="Gatsby logo" />
+
 #### Gatsby is a new Static Site Generator - Built with React, webpack & GraphQL.
 
 ##### It creates hybrid websites: think of it as a mixture of a static website and a React app.
@@ -62,9 +67,6 @@ import { Head, Appear } from 'mdx-deck'
 ### What’s so awesome about it?
 
 ---
-
-import Flex from './common/Flex'
-import Item from './common/Item'
 
 <Flex>
   <Item width="50">
