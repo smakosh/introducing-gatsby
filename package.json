@@ -8,6 +8,6 @@
   },
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx && mkdir -p dist/public && cp -R public/ dist/public/"
+    "build": "mdx-deck build deck.mdx"
   }
 }
